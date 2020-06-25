@@ -53,7 +53,7 @@ const postData = async ( url = '', data = {})=>{
 
 const getWeatherDemo = async (baseURL, weather, key)=>{
     //1.
-    const res = await fetch(baseURL+weather+',us'+'&appid='+key)
+    const res = await fetch(baseURL+weather+',bg'+'&units=metric'+'&appid='+key)
     //2. Call Fake API
     //const res = await fetch('/fakePictureData')
     try {
@@ -80,7 +80,7 @@ const updateUI = async () => {
 
         document.getElementById('date').innerHTML ='Date: ' + allData.date;
         document.getElementById('city').innerHTML ='City: ' + allData.city;
-        document.getElementById('temp').innerHTML = 'Temp: ' + ((allData.temp.temp) * (9/5) -459.67).toFixed(1) + ' F';
+        document.getElementById('temp').innerHTML = 'Temp: ' + (allData.temp.temp).toFixed(1) + ' \xB0' + 'C';
         document.getElementById('description').innerHTML ='Forecast: ' + allData.description;
         document.getElementById('content').innerHTML = 'Feeling: ' + allData.fav;
     }catch(error){
