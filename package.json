@@ -1,0 +1,33 @@
+{
+  "name": "weather-journal-app",
+  "version": "1.0.0",
+  "description": "Create an API that will fetch feather forecast based on zip entry",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klalchev/Udacity.Weather.Journal.App.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "environment",
+    "http",
+    "requests",
+    "&",
+    "routes",
+    "asynchronous",
+    "javascript",
+    "web",
+    "apis"
+  ],
+  "author": "Kostadin Lalchev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klalchev/Udacity.Weather.Journal.App/issues"
+  },
+  "homepage": "https://github.com/klalchev/Udacity.Weather.Journal.App#readme"
+}
