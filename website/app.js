@@ -53,7 +53,7 @@ const postData = async ( url = '', data = {})=>{
 
 const getWeatherDemo = async (baseURL, weather, key)=>{
     //1.
-    const res = await fetch(baseURL+weather+',bg'+'&units=metric'+'&appid='+key)
+    const res = await fetch(baseURL+weather+',us'+'&units=metric'+'&appid='+key)
     //2. Call Fake API
     //const res = await fetch('/fakePictureData')
     try {
